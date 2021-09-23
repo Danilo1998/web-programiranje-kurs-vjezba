@@ -1,0 +1,101 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table
+        {
+            margin: auto;
+            width: 30%;
+            border: solid 1.5px black;
+        }
+        td 
+        {
+            margin: auto;
+            border: solid 1.5px black;
+            padding-top: 2px;
+            padding-bottom: 2px;
+        }
+        .coll
+        {
+            width: 33%;
+        }
+        .colr
+        {
+            width: 66%;
+        }
+        .radio
+        {
+            margin-right: 0px;
+        }
+        .txt
+        {
+            width: 100%;
+            border: solid 2px black; 
+            margin-top: 2.5px;
+        }
+    </style>
+    <title>Zadatak 1</title>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <th colspan="2" style="text-align: center;"> Pizza shop 2.0 </th>
+            </tr>
+            <tr>
+                <td class="coll">
+                    Name
+                </td>
+                <td class="colr">
+                    <input type="text" required maxlength="20" style="width: 66%;" name="name">
+                </td>
+            </tr>
+            <tr>
+                <td class="coll">
+                    Pizza topping
+                </td>
+                <td class="colr">
+                    <input type="radio" name="topping" value="supreme" class="radio"> Supreme <br>
+                    <input type="radio" name="topping" value="vegeterian" class="radio"> Vegeterian <br>
+                    <input type="radio" name="topping" value="hawaiian" class="radio"> Hawaiian <br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Pizza Sauce
+                </td>
+                <td>
+                    <select name="sauce" style="width: 33%;">
+                        <option value="tomato">Tomato</option>
+                        <option value="garlic">Garlic</option>
+                        <option value="hot sauce">Hot sauce</option>
+                        <option value="mayo">Mayo</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                Optional Extras
+                </td>
+                <td>
+                    <input type="checkbox" name="extras" value="cheese" class="radio"> Extra Cheese
+                    <input type="checkbox" name="extras" value="gluten" class="radio"> Gluten Free Base
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    Delivery instructions: <br>
+                    <textarea name="instructions" required maxlength="100" rows="4" class="txt"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Send my Order" style="width: 25%;">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

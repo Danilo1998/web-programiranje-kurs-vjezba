@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        fieldset
+        {
+            padding: 10px;
+            padding-left: 20px;
+            margin-bottom: 2px;
+        }
+        .inputs
+        {
+            margin-left: 1px;
+            width: 20%;
+        }
+        .submit
+        {
+            width: 14%;
+            border-radius: 12px;
+        }
+    </style>
+    <title>Zadatak 2</title>
+</head>
+<body>
+    <h1> Software Order Form </h1>
+    <form style="width: 60%;">
+        <fieldset>
+            <legend>Licence details</legend>
+            <ul>
+                <li> Email address <input name="email" type="text" required class="inputs"> </li>
+                <li> Website <input type="text" name="web" required placeholder="http://www.example.com/" class="inputs"> </li>
+                <li> Number of licences <input type="text" name="nolic" required placeholder="How many to buy (1-10)" class="inputs"> </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Billing details</legend>
+            <ul>
+                <li> Name <input type="text" name="name" required class="inputs" placeholder="First Last"> </li>
+                <li> Address <textarea name="address" cols="30" rows="3" placeholder="House number,
+street, city, state"></textarea>
+                <li> Postal code <input type="text" name="poscode" required placeholder="Post code or zip code" class="inputs"> </li>
+                <li>Country 
+                    <select name="country" class="inputs" style="width: 13.5%;">
+                        <option value="aus">Australia</option>
+                        <option value="usa">USA</option>
+                        <option value="rus">Russia</option>
+                        <option value="can">Canada</option>
+                        <option value="chi">China</option>
+                    </select>
+                </li> 
+                <li> Phone <i> (optional) </i> <input type="text" name="phone" placeholder="Include country prefix, e.g." class="inputs"> </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Payment details</legend>
+            <ul>
+                <li> Card number <input type="text" name="card" required placeholder="As shown on the front of your card" class="inputs"> </li>
+                <li> CVV code <input type="text" name="cvv" required placeholder="3-digits number on the back of your card" class="inputs"> </li>
+                <li> Expiry date <input type="text" name="exp" required placeholder="YYYY-MM" class="inputs"> </li>
+            </ul>
+        </fieldset>
+        <input type="submit" value="Place your order" class="submit">
+    </form>
+</body>
+</html>
